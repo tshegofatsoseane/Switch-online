@@ -1,0 +1,845 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+  font-family: Arial;
+  padding: 0px;
+  background: #f1f1f1;
+  }
+}
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  height: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+
+  height: 90%;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+    height: 90%;
+}
+
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   margin-top: -20px;
+   height: 90%;
+}
+
+@media screen and (max-width: 600px) {
+
+.card {
+  margin: 0 -1px;
+  background-color: white;
+
+}
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .postcard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  
+  background-color: black;
+}
+
+.postcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+}
+
+
+   .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: black;
+      position: -webkit-sticky; /* Safari */
+       position: sticky;
+       top: 0;
+       color: skyblue;
+    }
+
+
+  .navbar li a {
+    color: white;
+  }
+
+
+
+.space{
+  padding: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.column {
+  float: left;
+  width: 25%;
+  height: 90%;
+  background-color: red;
+
+}
+
+
+
+ img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Remove extra left a\nd right margins, due to padding */
+.row {margin: 0 -5px;}
+
+
+
+@media screen and (max-width: 600px) {
+
+.row {
+  margin: 0 -16px;
+
+}
+
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+
+      padding: 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  height: 75px;
+  }
+
+
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: white;
+}
+
+
+
+
+
+.nav {
+      position: -webkit-sticky; /* Safari */
+  position: sticky;
+    display: flex;
+    overflow-x: auto;
+    bottom: 0;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+ .nav {
+      position: -webkit-sticky; /* Safari */
+     position: sticky;
+    display: flex;
+    overflow-x: auto;
+    bottom: 0;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+}
+
+
+.stream img {
+   height: 30%;
+}
+
+
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #57abf2;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+
+/*  video player  */
+
+
+article.video {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  background: #343b4a;
+  font-size: 13px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: Arial;
+}
+article.video video {
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+}
+article.video video.visible {
+  opacity: 1;
+  transition: opacity 1s ease-out 0.8s;
+  margin-bottom: -3px;
+}
+
+article.video .control-bar {
+  width: 100%;
+  height: 2.2em;
+  padding-bottom: 1px;
+  position: absolute;
+  bottom: -2.2em;
+  left: 0;
+  transition: bottom 0.3s ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+article.video .control-bar .button-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(52, 59, 74, 0.8) 0%, rgba(34, 41, 58, 0.8) 100%);
+  border-radius: 3px;
+  z-index: 2;
+}
+article.video .control-bar .button-bar i {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+  width: 2em;
+  height: 1.6em;
+  line-height: 1.6em;
+  text-align: center;
+  top: 50%;
+  margin-top: -0.75em;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+article.video .control-bar .button-bar i:hover {
+  opacity: 1;
+}
+article.video .control-bar .button-bar i.hidden {
+  opacity: 0;
+  z-index: 1;
+}
+article.video .control-bar .button-bar i.play,
+article.video .control-bar .button-bar i.pause,
+article.video .control-bar .button-bar i.replay {
+  width: 2.5em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+article.video .control-bar .button-bar i.fullscreen {
+  left: auto;
+  right: 0.3em;
+}
+article.video .control-bar .button-bar .volume {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+  width: 2em;
+  height: 1.6em;
+  line-height: 1.6em;
+  text-align: center;
+  top: 50%;
+  margin-top: -0.75em;
+  opacity: 0.6;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  overflow: hidden;
+  left: 2.3em;
+  font-size: 1.2em;
+  transition: all 0.8s ease-out;
+}
+article.video .control-bar .button-bar .volume.shift {
+  width: 7.5em;
+  transition: all 0.2s ease-in;
+}
+
+article.video .control-bar .button-bar .volume .toggle {
+  left: 0;
+}
+article.video .control-bar .button-bar .volume .rail {
+  position: absolute;
+  left: 2.5em;
+  top: 0;
+  width: 3em;
+  height: 100%;
+  margin-top: 0;
+  overflow: hidden;
+}
+article.video .control-bar .button-bar .volume .rail .grip {
+  position: absolute;
+  width: 0.4em;
+  height: 1em;
+  margin-left: -0.2em;
+  left: 100%;
+  top: 50%;
+  margin-top: -0.5em;
+  background: white;
+}
+article.video .control-bar .button-bar .volume .rail .audible,
+article.video .control-bar .button-bar .volume .rail .inaudible {
+  position: absolute;
+  width: 100%;
+  height: 0.3em;
+  left: 0;
+  top: 50%;
+  margin-top: -0.15em;
+  background: #2bffdf;
+}
+article.video .control-bar .button-bar .volume .rail .inaudible {
+  background: #ccc;
+}
+article.video .control-bar .button-bar .time {
+  color: #eee;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 7em;
+  height: 2.2em;
+  line-height: 2.8em;
+  opacity: 0.9;
+  transition: all 0.7s ease-in 0.2s;
+}
+article.video .control-bar .button-bar .time.shift {
+  left: 13em;
+  transition: all 0.2s ease-out;
+}
+article.video .control-bar .seek {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: -2px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 7;
+}
+article.video .control-bar .seek .buffer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  z-index: 8;
+}
+article.video .control-bar .seek .watched {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: 8;
+  background: #2bffdf;
+  overflow: visible!important;
+}
+article.video .control-bar .seek .watched:before,
+article.video .control-bar .seek .watched:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  height: 100%;
+  width: 10px;
+  background: #5effe7;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #5effe7;
+}
+article.video .control-bar .seek .watched:after {
+  right: 0px;
+  box-shadow: 0px 0 3px 0px #91ffee;
+  background: #91ffee;
+}
+article.video .control-bar .seek .watched .handle {
+  position: absolute;
+  display: block;
+  right: -2px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border: 2px solid white;
+  z-index: 9;
+  background: transparent;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), 0 0 4px 1px #91ffee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+article.video .control-bar .seek .watched .handle.active {
+  background: #666;
+}
+article.video .control-bar .seek .watched .handle:after {
+  content: "";
+  width: 26px;
+  height: 22px;
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  top: 50%;
+  margin-top: -15px;
+}
+article.video .control-bar .seek:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  z-index: 6;
+}
+article.video .control-bar .seek:hover {
+  height: 6px;
+  top: -6px;
+}
+article.video.active .control-bar {
+  bottom: 0;
+  transition: bottom 0.05s ease-out;
+}
+article.video.active .control-bar.active .seek:hover .handle {
+  top: -3px;
+}
+article.video.active .control-bar.active .seek .handle {
+  width: 4px;
+  height: 4px;
+  right: -5px;
+  top: -6px;
+  border-width: 5px;
+  transition: all 0.1s ease;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), 0 0 4px 0px #91ffee;
+}
+article.video.active .seek {
+  opacity: 1;
+}
+article.video .loading {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  height: 100px;
+  margin-top: 20px;
+  color: white;
+  font-size: 0.8em;
+  opacity: 0.1;
+  transition: all 0.4s ease;
+}
+article.video .loading.hidden {
+  opacity: 0;
+  top: 120%;
+  height: 0;
+}
+article.video .loading:hover,
+article.video .loading.error {
+  opacity: 1;
+}
+
+article.video .large-play {
+  text-align: center;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.3s ease;
+}
+article.video .large-play.hidden {
+  top: 45%;
+  opacity: 0;
+}
+article.video .spinner {
+  display: block;
+  overflow: visible;
+  text-indent: -999em;
+  position: absolute;
+  border-radius: 100% 0;
+  z-index: 2;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 2px;
+  margin-left: -10px;
+  margin-top: -10px;
+  box-shadow: 0px 0px 3px 2px rgba(43, 255, 223, 0.4), 0 0 5px 3px rgba(43, 255, 223, 0.4) inset;
+  border: none;
+  transform-origin: 9px 9px;
+  animation: spin 13s cubic-bezier(0.435, -0.165, 0.56, 1.17) infinite;
+  transition: top 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+article.video .spinner.hidden {
+  top: 120%;
+}
+
+article.video .spinner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0;
+  z-index: 10;
+  background: #fff;
+  top: 0px;
+  left: 0px;
+  width: 5px;
+  height: 3px;
+  transform: rotate(140deg);
+  box-shadow: 0px 0px 3px 2px rgba(43, 255, 188, 0.4), 0 0 5px 2px rgba(43, 255, 188, 0.4) inset;
+  animation: spin2 17s linear infinite;
+  transform-origin: 9px 9px;
+}
+
+article.video .spinner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 0;
+  z-index: 10;
+  background: #fff;
+  top: 0px;
+  left: 0px;
+  width: 6px;
+  height: 4px;
+  transform: rotate(70deg);
+  box-shadow: 0px 0px 5px 3px rgba(43, 252, 255, 0.4), 0 0 5px 1px rgba(43, 252, 255, 0.4) inset;
+  animation: spin2 13s linear infinite;
+  transform-origin: 9px 9px;
+}
+
+@media screen and (max-width: 800px) {
+  article.video {
+    font-size: 12px;
+  }
+
+  .intro {
+  font-family: "Source Sans Pro", Arial, Helvetica;
+  color: #ddd;
+  width: 50%;
+  margin: 30px auto;
+  font-size: 1.6em;
+  font-weight: 100;
+}
+.intro p {
+  margin: 8px auto;
+}
+.intro h2,
+.intro h3 {
+  margin: 8px auto;
+}
+.demo-container {
+  width: 50%;
+  margin: auto;
+  background: #eee;
+  padding: 20px;
+  font-family: "Redacted";
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.2;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/font/fontawesome-webfont.eot?v=3.1.0');
+  src: url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/font/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/font/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/font/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/font/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  14% {
+    transform: rotate(470deg);
+  }
+  18% {
+    transform: rotate(490deg);
+  }
+  20% {
+    transform: rotate(520deg);
+  }
+  22% {
+    transform: rotate(540deg);
+  }
+  26% {
+    transform: rotate(940deg);
+  }
+  30% {
+    transform: rotate(1080deg);
+  }
+  40% {
+    transform: rotate(1340deg);
+  }
+  45% {
+    transform: rotate(1440deg);
+  }
+  55% {
+    transform: rotate(1500deg);
+  }
+  56% {
+    transform: rotate(1500deg);
+  }
+  86% {
+    transform: rotate(3220deg);
+  }
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+.recipe-card article {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.recipe-card article ul {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+.recipe-card article ul li {
+  display: inline-block;
+  margin-left: 1em;
+  line-height: 1em;
+}
+.recipe-card article ul li:first-child {
+  margin-left: 0;
+}
+.recipe-card article ul li .icon {
+  vertical-align: bottom;
+}
+.recipe-card article ul li span:nth-of-type(2) {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  vertical-align: middle;
+  color: #838689;
+}
+.recipe-card article h2, .recipe-card article h3 {
+  margin: 0;
+  font-weight: 300;
+}
+.recipe-card article h2 {
+  font-size: 1.4em;
+  color: #222222;
+}
+.recipe-card article h3 {
+  font-size: 0.9375em;
+  color: #838689;
+}
+.recipe-card article p {
+  
+  font-size: 1em;
+  font-weight: 400;
+  color: #222222;
+}
+.recipe-card article p span {
+  font-weight: 700;
+  color: #000000;
+}
+.recipe-card article .ingredients {
+  margin: 2em 0 0.5em;
+  margin-top: 6px;
+
+}
+.recipe-card .icon {
+  display: inline;
+  display: inline-block;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/recipe-card-icons.svg);
+  background-repeat: no-repeat;
+}
+.recipe-card .icon-calories, .recipe-card .icon-calories\:regular {
+  background-position: 0 0;
+  width: 16px;
+  height: 19px;
+}
+.recipe-card .icon-clock, .recipe-card .icon-clock\:regular {
+  background-position: 0 -19px;
+  width: 20px;
+  height: 20px;
+}
+.recipe-card .icon-level, .recipe-card .icon-level\:regular {
+  background-position: 0 -39px;
+  width: 16px;
+  height: 19px;
+}
+.recipe-card .icon-play, .recipe-card .icon-play\:regular {
+  background-position: 0 -58px;
+  width: 21px;
+  height: 26px;
+}
+.recipe-card .icon-users, .recipe-card .icon-users\:regular {
+  background-position: 0 -84px;
+  width: 18px;
+  height: 18px;
+}
